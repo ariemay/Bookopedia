@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	{% for book in books %}
+
+		<div class="book-wrapper clearfix">
+			<div class="img-book-list">
+				<img class="img-responsive" src="{{ book.image_file.url }}">
+			</div>
+			<div class="meta-wrapper">
+				<div class="title-book">
+					<a href="{{ book.get_absolute_url }}"><h4>{{ book.title }}</h4></a>
+				</div>
+				<div class="author-book">
+					<p>by {{ book.author }}</p>
+				</div>
+				<div class="type-book">
+					<span>{{ book.type_of_book }}</span>
+				</div>
+				<div class="number-of-page">
+					<p>Total {{ book.number_of_pages }} Pages</p>
+				</div>
+				<div class="desc-book">
+					<p>{{ book.description|truncatewords:20|safe }}</p>
+				</div>
+			</div><!-- /meta-wrapper -->
+		</div><!-- /book-wrapper -->
+
+	{% endfor %}
+
+{% endblock %}

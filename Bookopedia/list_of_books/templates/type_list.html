@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	{% for tob in tob %}
+
+		<div class="type-wrapper clearfix">
+			<div class="type-book">
+				<span>{{ tob.type_name }}</span> | <a href="{% url 'types:type_edit' slug=tob.slug %}">Edit</a> | <a href="{% url 'types:type_remove' slug=tob.slug %}">Delete</a>
+			</div>
+			
+		</div><!-- /book-wrapper -->
+
+	{% endfor %}
+
+{% endblock %}

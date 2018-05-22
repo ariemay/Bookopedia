@@ -1,0 +1,148 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	color: #333;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	color: #797171;
+}
+.clearfix:after {
+	content: " "; 
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.btn {
+	border: 1px solid grey;
+	border-radius: 4px;
+	width: 100px;
+	padding: 5px 10px;
+}
+.btn-edit {
+	background-color: green;
+}
+.btn-delete {
+	background-color: red;
+}
+.plus {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+#sidebar-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 100%;
+	border-right: 1px solid #333;
+}
+.sidebar-header {
+	text-align: center;
+}
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.side-menu ul li {
+	display: block;
+    padding: 5px 0px;
+}
+.side-menu ul li h3 {
+	margin: 0;
+}
+#main-wrapper {
+	float: left;
+	padding-left: 220px;
+	width: 100%;
+
+}
+.header-wrapper {
+	height: 70px;
+	border-bottom: 1px solid #333;
+}
+.search {
+	padding-top: 20px;
+}
+
+.book-wrapper {
+	position: relative;
+	float: left;
+	width: 33.33333333%;
+	padding: 15px;
+	min-height: 290px;
+
+}
+.img-book-list {
+	width: 40%;
+	float: left;
+}
+.img-responsive {
+	width: 100%;
+}
+.meta-wrapper {
+	width: 60%;
+	padding: 10px;
+	float: left;
+}
+.meta-wrapper p {
+	margin: 0;
+}
+.title-book a:hover {
+	color: #797171;
+}
+.title-book a h4 {
+	margin: 0;
+
+}
+.author-book {
+	color: #717171;
+}
+.type-book {
+	margin-bottom: 10px;
+}
+.type-book span {
+	border: 3px solid #333;
+    padding: 5 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f9fd00;
+}
+
+/*book detail*/
+.detail-wrapper {
+	padding: 0 15px;
+}
+.img-book {
+	width: 20%;
+	float: left;
+	padding: 15px;
+}
+.detail-meta {
+	width: 80%;
+	float: left;
+	padding: 15px;
+}
+.detail-meta p{
+	margin: 5px 0;
+}
+
+.title-web {
+	height: 70px;
+	border-bottom: 1px solid #333;
+}
